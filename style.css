@@ -1,0 +1,519 @@
+/* ----------------------general  css----------------------------------- */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins' , sans-serif;
+    scroll-behavior: smooth;
+    
+}
+body{
+    background: #080808;
+    color:#fff;
+    cursor: url(cursor-Done.svg),auto;
+}
+
+/* ----------------------first section css----------------------------------- */
+#header{
+    width: 100%;
+    height: 100vh;
+    background-image: url(./img1.3.png);
+    background-size: cover;
+    background-position:center;
+    background-attachment: fixed;
+     
+
+}
+.container{
+    padding: 10px 10%;  
+}
+/* ----------------------  ----------------------------------- */
+.checkbtn {
+    font-size: 22px;
+    color: white;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+  }
+  #check {
+    display: none;
+  }
+  /* ----------------------  ----------------------------------- */
+
+  /* ----------------------  ----------------------------------- */
+
+/* ----------------------  ----------------------------------- */
+.part1{
+    padding-left: 10%;
+    padding-right: 5%;
+    width: 100%;
+
+}
+.part2{
+    display: flex;
+    align-items: center;
+    justify-content:flex-start;
+    height: 100vh;
+}
+
+
+
+nav{
+    display: flex;
+    align-items:center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+nav h1{
+    font-size: 1.5rem;
+    font-weight: 800;
+}
+nav span{
+    color: #ff004f;
+}
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+}
+nav ul li a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    position: relative;
+}
+nav ul li a::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #ff004f;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.3s;
+}
+nav ul li a:hover::after{
+    width: 100%;
+    
+}
+
+.header-text{
+    margin-left: 10%;
+    font-size: 30px;
+}
+.header-text h1{
+    font-size: 60px;
+    margin-top: 20px;
+}
+.header-text h1 span{
+    color: #ff004f;
+}
+
+/* ----------------------second section css----------------------------------- */
+.about-heading{
+    width: 100%;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    height: 180px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.about-details{
+    width: 100%;
+    height:550px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.cards{
+    height: 80%;
+    width: 30%;
+    border: 5px solid white;
+    border-radius: 10px;
+    gap: 10px;
+}
+.cards h1{
+    color: #fff;
+    text-decoration: underline;
+    text-decoration-color: #ff004f;
+    font-size: 28px;
+    text-underline-offset: 1rem;
+}
+
+
+.about-head{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px 10px;
+    height: 20%;
+}
+.about-lists{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.about-lists ul li{
+    list-style: none;
+    margin: 12px 0;
+
+}
+.about-lists ul li span{
+    color:#b54769;
+    font-size: 18px;
+}
+/* ----------------------third section css----------------------------------- */
+.services-heading{
+    width: 100%;
+    margin-top: 25px;
+    margin-bottom: 30px;
+    height: 180px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#services{
+    padding:30px 0 130px 0;
+}
+.services-list{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
+}
+.services-list div{
+    background: #262626;
+    padding: 40px;
+    font-size: 13px;
+    font-weight: 300;
+    border-radius: 10px;
+    transition: background 0.5s,transform 0.5s;
+}
+.services-list div i{
+    font-size: 50px;
+    margin-bottom: 30px;
+}
+.services-list div h2{
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+.services-list div a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 12px;
+    margin-top: 20px;
+    display: inline-block;
+}
+.services-list div:hover{
+    background-color: #ff004f;
+    transform: translateY(-10px);
+    cursor: url(cursor-Done\ black.svg),auto;
+}
+
+/* ----------------------footer section css----------------------------------- */
+.row{
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+}
+.contact-left{
+    margin-top: -15%;
+}
+
+.contact-left p i{
+    color: #ff004f;
+    margin-right: 15px;
+    font-size: 25px;
+}
+.social-icons{
+    margin-top: 30px;
+}
+.social-icons a {
+    text-decoration: none;
+    font-size: 30px;
+    margin-right: 15px;
+    color:#ababab;
+    display: inline-block;
+    transition: transform 0.4s;
+}
+.social-icons a:hover{
+    color: #ff004f;
+    transform: translateY(-5px);
+
+}
+
+.contact-right form{
+    width:100%;
+    margin-top: 10px;
+}
+form input,form textarea{
+    width: 100%;
+    border:0;
+    outline: none;
+    background:#262626;
+    padding: 15px;
+    margin: 15px 0;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 6px;
+} 
+.btn{
+    display: block;
+    margin: 50px auto;
+    width: fit-content;
+    border: 1px solid #ff004f;
+    padding: 14px 50px;
+    border-radius: 6px;
+    text-decoration: none;
+    color: #fff;
+    transition:  0.5s;
+}
+.btn.btn2{
+    display: inline-block;
+    background: #ff004f;
+}
+.btn:hover,btn:focus{
+    cursor: url(cursor-Done\ black.svg),auto;
+}
+.copyright{
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    margin-top: 1.1rem;
+    color:white;
+    background-color: #262626;
+    width: 100%;
+    height: 50px;
+    font-weight: 400;
+}
+/* ---------------------- Animation ----------------------------------- */
+
+.fade-animation{
+    animation: left-fade-animation 1s;
+}
+@keyframes left-fade-animation {
+    from{
+        opacity:0;
+        /* transform: rotateX(-10deg); */
+        transform: translatex(-800px) ;
+    }
+    to{
+        opacity:1;
+        /* transform: rotateX(-0); */
+        transform: translatex(0);
+    }
+}
+
+.autoshow-head{
+    animation: autoShowhead-Animation both;
+    animation-timeline: view(0% 30%);
+}
+@keyframes autoShowhead-Animation {
+    from{
+        opacity: 0;
+        transform: translateY(200px) scale(0.3);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+}
+.autoshow{
+    animation: autoShowAnimation both;
+    animation-timeline: view(85% 30%);
+}
+@keyframes autoShowAnimation {
+    from{
+        opacity: 0;
+        transform: translateY(200px) scale(0.3);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+}
+.autoshow-contact{
+    animation: autoShowContactAnimation both;
+    animation-timeline: view(90% 20%);
+}
+@keyframes autoShowContactAnimation {
+    from{
+        opacity: 0;
+        transform: translateY(200px) scale(0);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+}
+
+
+/* ---------------------- Responsive ----------------------------------- */
+
+/* ---------------------- for hamburger menu and header ----------------------------------- */
+
+@media (max-width: 890px) {
+    #header{
+        background-image: url(./img1.3.png);
+     }
+    .checkbtn {
+      display: block;
+     }
+    label.logo {
+      font-size: 22px;
+     }
+    nav ul {
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: #ff004f;
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+      }
+      nav ul li {
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+      }
+      nav ul li a {
+        font-size: 20px;
+      }
+      #check:checked~ul {
+        left: 0;
+      }
+      nav h1{
+        position: relative;
+        left:10px;
+        }
+
+    .part1{
+        position: fixed;
+        top: 0;
+        z-index: 9999;
+        background-color: #080808;
+    }
+}
+
+/* ---------------------- mobile view ----------------------------------- */
+
+@media (max-width:500px){
+    .container{
+        padding: 10px 10%;  
+    }
+    #header{
+        background-image: url(./img1.4.png);
+    }
+    .header-text{
+        margin-top: 10px;
+        margin-left: 10%;
+        font-size: 20px;
+    }
+    .header-text h1{
+        font-size: 38px;
+        margin-top: 10px;
+    }
+    .part2{
+        width:30vw;
+        padding-top: 0px;
+        font-size: 0.3rem;
+    }
+    /* ---------------------- second section ----------------------------------- */
+
+    .about-details{
+        width: 100%;
+        height:1000px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .cards{
+        height: 80vh;
+        width: 95%;
+        border: 5px solid white;
+        border-radius: 10px;
+        margin: 10px 0 10px 0;
+    }
+    /* ---------------------- third section ----------------------------------- */
+    .services-heading{
+        width: 100%;
+        margin-top: 15px;
+        margin-bottom: 0px;
+    }
+    .services-list{
+        display: grid;
+        grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-gap: 10px;
+        margin-top: 5px;
+    }
+    /* ---------------------- footer section ----------------------------------- */
+    .row{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items:center;
+    }
+
+}
+
+
+/* ---------------------- tablet view ----------------------------------- */
+@media (max-width:890px) and (min-width:500px)
+{
+    #header{
+        background-image: url(./img1.3.png);
+    }
+    .header-text{
+        margin-top: 20px;
+        margin-left: 30%;
+    }
+    .header-text h1{
+        font-size: 45px;
+        margin-top: 20px;
+    }
+    .part2{
+        width:30vw;
+        padding-top: 30px;
+        font-size: 1rem;
+    }  
+    .about-details{
+        width: 100%;
+        height:1200px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .cards{
+        height: 80vh;
+        width: 95%;
+        border: 5px solid white;
+        border-radius: 10px;
+        margin: 10px 0 10px 0;
+    } 
+    .services-heading{
+        width: 100%;
+        margin-top: 15px;
+        margin-bottom: 0px;
+    }
+    .services-list{
+        display: grid;
+        grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-gap: 10px;
+        margin-top: 5px;
+    }
+    .row{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items:center;
+    }
+}
